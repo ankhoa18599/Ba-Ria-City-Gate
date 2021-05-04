@@ -23,26 +23,41 @@
         <div class="header_content">
         <img width="100%" height="100%" src="assets/img/logo.png" alt="">
         <div class="header_list">
-            <i style="margin-right: -17%; font-size: 24px;" class="fas fa-phone"></i>
-            <p>076 922 0162</p>
-            <i id="header_click" style="font-size: 24px;" class="fas fa-bars"></i>
+            <div class="phone" style="display: flex;">
+            <i style="margin-right: -17%; font-size: 20px; cursor: pointer;" class="fas fa-phone-alt"></i>
+            <p style="cursor: pointer;">076 922 0162</p>
         </div>
-        <div style="display: none;" class="header_list_ul">
+            <i id="header_click" style="font-size: 24px; cursor: pointer;" class="fas fa-bars"></i>
+        </div>
+        <div id="header_nen" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(132, 136, 139, 0.7); z-index: 10; display: none;"></div>
+        <div id="header_list_ul" class="header_list_ul">
             <nav>
                 <ul>
-                    <li>x</li>
+                    <p id="header_close" style="margin-left: 90%; font-size: 28px; color: gray; cursor: pointer; font-weight: bolder;">x</p>
                     <li>GIỚI THIỆU</li>
                     <li>VỊ TRÍ</li>
                     <li>MẶT BẰNG</li>
                     <li>TIỆN ÍCH</li>
                     <li>GIÁ TRỊ ĐẦU TƯ</li>
                     <li>LIÊN HỆ</li>
-                    <li>x</li>
+                    <li style="display: flex; text-align: center; width: 40%; color: gray; border: 0;"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></li>
                 </ul>
             </nav>
         </div>
         </div>
     </div>
+    <script>
+        document.getElementById("header_click").onclick = function(){
+            document.getElementById("header_list_ul").style.display = "block";
+            document.getElementById("header_nen").style.display = "block";
+            document.body.style.overflow = 'hidden';
+        }
+        document.getElementById("header_close").onclick = function(){
+            document.getElementById("header_list_ul").style.display = "none";
+            document.getElementById("header_nen").style.display = "none";
+            document.body.style.overflow = 'scroll';
+        }
+    </script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script>
     $(document).ready(function(){
