@@ -81,6 +81,28 @@ li {
 @-webkit-keyframes header_list{
   from{margin-right: -15%;} to {margin-right: 0;}
 }
+@media only screen and (max-width: 1020px){
+    .header .header_content .header_list{
+        width: 50%;
+    }
+    .header .header_content .header_list .phone {
+        width: 50%;
+    }
+    .header .header_content .header_list_ul {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .header .header_content .header_list{
+        width: 65%;
+    }
+    .header .header_content .header_list .phone {
+        width: 50%;
+    }
+    .header .header_content .header_list_ul {
+        width: 50%;
+    }
+}
 .video-banner{
 
 }
@@ -186,6 +208,53 @@ li {
 @-webkit-keyframes mat_bang2{
     from{margin-top: 90%;} to {margin-top: 70%;}
 }
+@media only screen and (max-width: 1400px)
+{
+    .matbang_1{
+        width: 100%;
+        background-image: url(/assets/img/tt_duan1.jpg) !important;
+    }
+    .matbang_2{
+        width: 100%;
+        background-image: url(/assets/img/tt_duan.jpg) !important;
+    }
+    .matbang_1 img {
+        width: 150%;
+        margin-top: 250%;
+        margin-left: -30%;
+        animation-name: mat_bang1;
+        animation-duration: 1s;
+
+        
+    }
+    .matbang_2 img {
+        width: 150%;
+        margin-top: 250%;
+        margin-left: -130%;
+        animation-name: mat_bang2;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes mat_bang1{
+        from{margin-top: 280%;} to {margin-top: 250%;}
+    }
+    @-webkit-keyframes mat_bang2{
+        from{margin-top: 280%;} to {margin-top: 250%;}
+    }
+}
+@media only screen and (max-width: 1020px){
+
+    .matbang_1 img {
+        width: 300%;
+        margin-left: -110%;
+
+        
+    }
+    .matbang_2 img {
+       width: 300%;
+        margin-left: -110%;
+    }
+}
+
 .carousel-cell:nth-child(1){
     position: relative;
     background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
@@ -350,7 +419,7 @@ li {
     cursor: pointer;
     display: none;
 } 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1400px){
     .location {
         width: 100%;
         background-position: center;
@@ -364,7 +433,7 @@ li {
         position: absolute;
         margin-top: -1%;
         margin-left: 2px;
-        font-size: 45%;
+        font-size: 80%;
      }
      .location .location_video {
          position: absolute;
@@ -374,8 +443,60 @@ li {
          font-size: 40%;
      }
 }
-
-
+@media only screen and (max-width: 1160px)
+{
+    .location {
+        width: 100%;
+        background-position: center;
+    }
+     .location .location_content img {
+         width: 28%;
+         height: 100%;
+         background: white;
+     }
+     .location .location_content .location_text {
+        position: absolute;
+        margin-top: -1%;
+        margin-left: 2px;
+        font-size: 70%;
+     }
+}
+@media only screen and (max-width: 1020px)
+{
+    .location {
+        width: 100%;
+        background-position: center;
+    }
+     .location .location_content img {
+         width: 28%;
+         height: 100%;
+         background: white;
+     }
+     .location .location_content .location_text {
+        position: absolute;
+        margin-top: -1%;
+        margin-left: 2px;
+        font-size: 50%;
+     }
+}
+@media only screen and (max-width: 730px)
+{
+    .location {
+        width: 100%;
+        background-position: center;
+    }
+     .location .location_content img {
+         width: 28%;
+         height: 100%;
+         background: white;
+     }
+     .location .location_content .location_text {
+        position: absolute;
+        margin-top: -1%;
+        margin-left: 2px;
+        font-size: 35%;
+     }
+}
 /* CSS for Khu do thi kieu mau */
 .banner_layer {
     position: relative;
