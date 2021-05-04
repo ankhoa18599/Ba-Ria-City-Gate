@@ -60,6 +60,33 @@
     background: url('../media/image/noi-dang-song/bg6.jpg');
 }
 
+.carousel_two .carousel-cell:nth-child(1){
+    background: url('../media/image/dau-tu-phat-trien/bg0.jpg');
+}
+.carousel_two .carousel-cell:nth-child(2){
+    background: url('../media/image/dau-tu-phat-trien/bg1.jpg');
+}
+.carousel_two .carousel-cell:nth-child(3){
+    background: url('../media/image/dau-tu-phat-trien/bg2.jpg');
+}
+.carousel_two .carousel-cell:nth-child(4){
+    background: url('../media/image/dau-tu-phat-trien/bg3.jpg');
+}
+
+.carousel_two .carousel-cell:nth-child(1) .box img {
+    max-width: 100%;
+    width: 462px;
+    height: 150px;
+    left: 50%;
+    display: inline-block;
+    animation: carousel 1s 1 ease;
+}
+
+@-webkit-keyframes carousel {
+    from {left: 0; opacity: 0;}
+    to {left: 50%; opacity: 1;}
+}
+
 /* cell number */
 .carousel-cell:before {
   display: block;
