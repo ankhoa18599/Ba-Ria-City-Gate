@@ -33,9 +33,9 @@ li {
     justify-content: space-between;
     display: flex;
 }
-.header .header_content img {
-    width: 20%;
-    height: auto;
+.header .header_content a {
+    width: 15%;
+    margin-left: 5%;
 }
 .header .header_content .header_list{
     display: flex;
@@ -73,7 +73,10 @@ li {
     border-bottom: 1px solid rgba(177, 175, 175, 0.247) ;
     float: left;
     font-size: 16px;
-
+    cursor: pointer;
+}
+.header .header_content .header_list_ul nav ul li a {
+    color: gray;
 }
 @-webkit-keyframes header_list{
   from{margin-right: -15%;} to {margin-right: 0;}
