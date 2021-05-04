@@ -222,19 +222,6 @@ li {
     background: url('../media/image/dau-tu-phat-trien/bg3.jpg');
 }
 
-.carousel_two .carousel-cell:nth-child(1) .box img {
-    max-width: 100%;
-    width: 462px;
-    height: 150px;
-    left: 50%;
-    display: inline-block;
-    animation: carousel 1s 1 ease;
-}
-
-@-webkit-keyframes carousel {
-    from {left: 0; opacity: 0;}
-    to {left: 50%; opacity: 1;}
-}
 
 /* cell number */
 .carousel-cell:before {
@@ -415,7 +402,7 @@ li {
     margin: 2rem;
     padding-top: 15%;
     left: 8%;
-    animation: moveTitle 3s 1 ease;
+    opacity: 0;
 }
 
 @keyframes moveTitle {
@@ -430,7 +417,17 @@ li {
     width: 80%;
     right: 8%;
     display: inline-block;
-    animation: moveQuote 3s 1 ease;
+    opacity: 0;
+}
+
+.text_box.trans_quote {
+    animation: moveQuote 2s 1 ease;
+    opacity: 1;
+}
+
+.text_img.trans_text {
+    animation: moveTitle 2s 1 ease;
+    opacity: 1;
 }
 
 .blockquote {
@@ -446,4 +443,29 @@ li {
 @keyframes moveQuote {
     from {right: 0; opacity: 0;}
     to {right: 8%; opacity: 1;}
+}
+
+.scrolltotop {
+    position: fixed;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 1000;
+    border: 2px solid white;
+    border-radius: 4rem;
+    transition: 1s;
+    opacity: 0;
+}
+
+.btn_scrolltotop i {
+    padding: 13px;
+    color: white;
+}
+
+.scrolltotop.show {
+    transition: 1s;
+    opacity: 1;
 }
