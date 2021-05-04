@@ -184,3 +184,63 @@
     cursor: pointer;
     display: none;
 }
+
+
+/* CSS for Khu do thi kieu mau */
+.banner_layer {
+    position: relative;
+    width: 100%;
+    min-height: 750px;
+    height: 100%;
+    color: white;
+    background-image: url(../media/image/khu-do-thi-kieu-mau/banner1.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    animation: banner 2s ease;
+}
+
+@keyframes banner {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.text_img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    margin: 2rem;
+    padding-top: 15%;
+    left: 8%;
+    animation: moveTitle 3s 1 ease;
+}
+
+@keyframes moveTitle {
+    from {left: 0; opacity: 0;}
+    to {left: 8%; opacity: 1;}
+}
+
+.text_box {
+    position: relative;
+    margin: 5rem;
+    margin-top: 6rem;
+    width: 80%;
+    right: 8%;
+    display: inline-block;
+    animation: moveQuote 3s 1 ease;
+}
+
+.blockquote {
+    padding: 1.5rem;
+    color: #000;
+    background-color: var(--background-color);
+    border-radius: 1.3rem;
+    font-size: 0.9em;
+    line-height: 2em;
+    font-family: var(--roboto);
+}
+
+@keyframes moveQuote {
+    from {right: 0; opacity: 0;}
+    to {right: 8%; opacity: 1;}
+}
