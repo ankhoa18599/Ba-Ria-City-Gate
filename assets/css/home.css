@@ -2,3 +2,23 @@
 @import url('./partials/_variables.css');
 /* Load font Roboto */
 @import url('./fonts.css');
+
+.video-banner{
+
+}
+.full-height{
+    min-height: 550px;
+    height: 100vh;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+.video-fit{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+}
+@media (max-width:600px){
+    .hide-for-small{
+        display: none !important;
+    }
+}
