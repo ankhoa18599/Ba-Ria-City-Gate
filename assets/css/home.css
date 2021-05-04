@@ -30,7 +30,6 @@
   counter-increment: gallery-cell;
 }
 .bg-fill{
-    resize: both;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -38,26 +37,70 @@
 .hidden{
   display: none;
 }
+.img-popup{
+    position: absolute;
+    padding: 20px;
+}
+.carousel-cell:nth-child(1)>.img-popup{
+    width: 40%;
+    top:10px;
+    left: 130px;
+}
+.carousel-cell:nth-child(2)>.img-popup{
+    width: 40%;
+    top: 26px;
+    right: 55px;
+    
+}
+.carousel-cell:nth-child(3)>.img-popup{
+    width: 46%;
+    left: 40px;
+    bottom: 140px;
+}
+.carousel-cell:nth-child(4)>.img-popup{
+    width: 44%;
+    left: 40px;
+    bottom: 155px;
+}
+.carousel-cell:nth-child(5)>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.carousel-cell:nth-child(6)>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.carousel-cell:nth-child(7)>.img-popup{
+   width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
 .carousel-cell:nth-child(1){
-    background: url('../media/image/noi-dang-song/bg0.jpg');
+    position: relative;
+    background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(2){
-    background: url('../media/image/noi-dang-song/bg1.jpg');
+    background: url('../media/image/noi-dang-song/bg1.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(3){
-    background: url('../media/image/noi-dang-song/bg2.jpg');
+    background: url('../media/image/noi-dang-song/bg2.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(4){
-    background: url('../media/image/noi-dang-song/bg3.jpg');
+    background: url('../media/image/noi-dang-song/bg3.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(5){
-    background: url('../media/image/noi-dang-song/bg4.jpg');
+    background: url('../media/image/noi-dang-song/bg4.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(6){
-    background: url('../media/image/noi-dang-song/bg5.jpg');
+    background: url('../media/image/noi-dang-song/bg5.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(7){
-    background: url('../media/image/noi-dang-song/bg6.jpg');
+    background: url('../media/image/noi-dang-song/bg6.jpg') top center / cover no-repeat;
 }
 
 /* cell number */
@@ -81,13 +124,14 @@
     .flickity-button{
         display: none;
     }
+    .carousel-cell { width: 100%; }
 }
 .location {
   
     width: 100%;
     height: 100%;
     padding: 2% 0; 
-    background-image: url(/assets/img/vitri.gif);
+    background-image: url('/assets/img/vitri.gif');
   
 }
 .location .location_content{
