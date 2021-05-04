@@ -142,6 +142,7 @@
         <button class="location_close" id="location_close">x</button>
     </div>
     <script>
+        var video = document.getElementById("location_video_open");
         document.getElementById("location_video").onclick = function(){ 
             document.getElementById("location_video_open").style.display = "block";
             document.getElementById("location_nen").style.display = "block";
@@ -161,7 +162,23 @@
             document.body.style.overflow = 'scroll';
         }
     </script>
-    <section id="matbang">
+      <section id="matbang">
+        <div id="vid-banner" class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div id="matbang_1" class="carousel-cell bg-fill matbang_1">
+                <div class="img-popup animate__animated animate__fadeInLeft">
+                    <img class="matbang_1_img"  src="./assets/img/ttda.png" alt="">
+                </div>       
+            </div>
+            <div id="matbang_2" class="carousel-cell bg-fill matbang_2">
+                <div class="img-popup animate__animated animate__fadeInRight">
+                    <img class="matbang_2_img" src="./assets/img/ttda.png" alt="">
+                </div>
+            </div>
+        </div>
+          
+    </section>
+
+    <section id="tienich">
         <div id="vid-banner" class="carousel" data-flickity='{ "wrapAround": true }'>
             <div class="carousel-cell bg-fill">
                 <div class="img-popup animate__animated animate__fadeInLeft">

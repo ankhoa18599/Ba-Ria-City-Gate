@@ -158,6 +158,34 @@ li {
     left: 5%;
     top: 10%;
 }
+.matbang_1{
+    width: 100%;
+    background-image: url(/assets/img/tt_duan1.jpg) !important;
+    background-position: center;
+}
+.matbang_2{
+    width: 100%;
+    background-image: url(/assets/img/tt_duan.jpg) !important;
+    background-position: center;
+}
+.matbang_1 img {
+    margin-top: 70%;
+    animation-name: mat_bang1;
+    animation-duration: 1s;
+    
+}
+.matbang_2 img {
+    margin-top: 70%;
+    margin-left: -130%;
+    animation-name: mat_bang2;
+    animation-duration: 1s;
+}
+@-webkit-keyframes mat_bang1{
+    from{margin-top: 90%;} to {margin-top: 70%;}
+}
+@-webkit-keyframes mat_bang2{
+    from{margin-top: 90%;} to {margin-top: 70%;}
+}
 .carousel-cell:nth-child(1){
     position: relative;
     background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
@@ -299,7 +327,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(132, 136, 139, 0.479);
+    background-color: rgba(132, 136, 139, 0.7);
     z-index: 10;
     display: none;
     animation-duration: 3s;
