@@ -7,8 +7,47 @@
     <title>BA RIA CITY GATE</title>
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/flickity.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="header" id="header">
+        <div class="header_content">
+        <img width="100%" height="100%" src="assets/img/logo.png" alt="">
+        <div class="header_list">
+            <i class="fas fa-phone"></i>
+            <p>076 922 0162</p>
+            <i id="header_click" class="fas fa-bars"></i>
+        </div>
+        <div style="display: none;" class="header_list_ul">
+            <nav>
+                <ul>
+                    <li>x</li>
+                    <li>GIỚI THIỆU</li>
+                    <li>VỊ TRÍ</li>
+                    <li>MẶT BẰNG</li>
+                    <li>TIỆN ÍCH</li>
+                    <li>GIÁ TRỊ ĐẦU TƯ</li>
+                    <li>LIÊN HỆ</li>
+                    <li>x</li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+        if($(window).scrollTop() > 20){
+            $(".header").css({"background-color":"#3d6852"});   
+            }
+        else{
+                $(".header").css({"background-color":"rgba(245, 222, 179, 0)"});
+            }
+
+        })
+    })
+    </script>
     <!-- Begin video banner -->
     <div class="video-banner hide-for-small full-height fill">
         <video class="video-fit" preload="" playsinline="" autoplay="" muted="" loop="">
