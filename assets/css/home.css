@@ -69,7 +69,6 @@ li {
   counter-increment: gallery-cell;
 }
 .bg-fill{
-    resize: both;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -77,26 +76,70 @@ li {
 .hidden{
   display: none;
 }
+.img-popup{
+    position: absolute;
+    padding: 20px;
+}
+.carousel-cell:nth-child(1)>.img-popup{
+    width: 40%;
+    top:10px;
+    left: 130px;
+}
+.carousel-cell:nth-child(2)>.img-popup{
+    width: 40%;
+    top: 26px;
+    right: 55px;
+    
+}
+.carousel-cell:nth-child(3)>.img-popup{
+    width: 46%;
+    left: 40px;
+    bottom: 140px;
+}
+.carousel-cell:nth-child(4)>.img-popup{
+    width: 44%;
+    left: 40px;
+    bottom: 155px;
+}
+.carousel-cell:nth-child(5)>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.carousel-cell:nth-child(6)>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.carousel-cell:nth-child(7)>.img-popup{
+   width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
 .carousel-cell:nth-child(1){
-    background: url('../media/image/noi-dang-song/bg0.jpg');
+    position: relative;
+    background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(2){
-    background: url('../media/image/noi-dang-song/bg1.jpg');
+    background: url('../media/image/noi-dang-song/bg1.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(3){
-    background: url('../media/image/noi-dang-song/bg2.jpg');
+    background: url('../media/image/noi-dang-song/bg2.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(4){
-    background: url('../media/image/noi-dang-song/bg3.jpg');
+    background: url('../media/image/noi-dang-song/bg3.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(5){
-    background: url('../media/image/noi-dang-song/bg4.jpg');
+    background: url('../media/image/noi-dang-song/bg4.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(6){
-    background: url('../media/image/noi-dang-song/bg5.jpg');
+    background: url('../media/image/noi-dang-song/bg5.jpg') top center / cover no-repeat;
 }
 .carousel-cell:nth-child(7){
-    background: url('../media/image/noi-dang-song/bg6.jpg');
+    background: url('../media/image/noi-dang-song/bg6.jpg') top center / cover no-repeat;
 }
 
 /* cell number */
@@ -120,13 +163,14 @@ li {
     .flickity-button{
         display: none;
     }
+    .carousel-cell { width: 100%; }
 }
 .location {
   
     width: 100%;
     height: 100%;
     padding: 2% 0; 
-    background-image: url(/assets/img/vitri.gif);
+    background-image: url('/assets/img/vitri.gif');
   
 }
 .location .location_content{
@@ -248,4 +292,64 @@ li {
          width: 15%;
          font-size: 40%;
      }
+}
+
+
+/* CSS for Khu do thi kieu mau */
+.banner_layer {
+    position: relative;
+    width: 100%;
+    min-height: 750px;
+    height: 100%;
+    color: white;
+    background-image: url(../media/image/khu-do-thi-kieu-mau/banner1.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    animation: banner 2s ease;
+}
+
+@keyframes banner {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.text_img {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    margin: 2rem;
+    padding-top: 15%;
+    left: 8%;
+    animation: moveTitle 3s 1 ease;
+}
+
+@keyframes moveTitle {
+    from {left: 0; opacity: 0;}
+    to {left: 8%; opacity: 1;}
+}
+
+.text_box {
+    position: relative;
+    margin: 5rem;
+    margin-top: 6rem;
+    width: 80%;
+    right: 8%;
+    display: inline-block;
+    animation: moveQuote 3s 1 ease;
+}
+
+.blockquote {
+    padding: 1.5rem;
+    color: #000;
+    background-color: var(--background-color);
+    border-radius: 1.3rem;
+    font-size: 0.9em;
+    line-height: 2em;
+    font-family: var(--roboto);
+}
+
+@keyframes moveQuote {
+    from {right: 0; opacity: 0;}
+    to {right: 8%; opacity: 1;}
 }
