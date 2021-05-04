@@ -25,14 +25,18 @@
   width: 100%;
   height: 100vh;
   margin-right: 10px;
-  background: #8C8;
+  /* background: #8C8; */
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
 .bg-fill{
+    resize: both;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
+}
+.hidden{
+  display: none;
 }
 .carousel-cell:nth-child(1){
     background: url('../media/image/noi-dang-song/bg0.jpg');
@@ -66,7 +70,6 @@
 }
 .w-100{
     width: 100%;
-    min-width: 100%;
 }
 .h-100{
     height: 100%;
@@ -74,6 +77,9 @@
 @media (max-width:600px){
     .hide-for-small{
         display: none !important;
+    }
+    .flickity-button{
+        display: none;
     }
 }
 .location {
