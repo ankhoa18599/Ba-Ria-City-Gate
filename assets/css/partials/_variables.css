@@ -1,9 +1,11 @@
 /* Khai báo các biến toàn cục */
+@import url('../fonts.css');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     width: 100%;
+    font-family: var(--roboto),Arial,sans-serif;
 }
 /* CSS Variables */
 
