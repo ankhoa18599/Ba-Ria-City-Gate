@@ -38,6 +38,7 @@ li {
     height: auto;
 }
 .header .header_content .header_list{
+    display: flex;
   width: 25%;
   margin-top: 2%;
   color: white;
