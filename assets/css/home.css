@@ -208,53 +208,30 @@ li {
 @-webkit-keyframes mat_bang2{
     from{margin-top: 90%;} to {margin-top: 70%;}
 }
-@media only screen and (max-width: 1400px)
-{
-    .matbang_1{
-        width: 100%;
-        background-image: url(/assets/img/tt_duan1.jpg) !important;
-    }
-    .matbang_2{
-        width: 100%;
-        background-image: url(/assets/img/tt_duan.jpg) !important;
-    }
-    .matbang_1 img {
-        width: 150%;
-        margin-top: 250%;
-        margin-left: -30%;
-        animation-name: mat_bang1;
-        animation-duration: 1s;
-
-        
-    }
-    .matbang_2 img {
-        width: 150%;
-        margin-top: 250%;
-        margin-left: -130%;
-        animation-name: mat_bang2;
-        animation-duration: 1s;
-    }
-    @-webkit-keyframes mat_bang1{
-        from{margin-top: 280%;} to {margin-top: 250%;}
-    }
-    @-webkit-keyframes mat_bang2{
-        from{margin-top: 280%;} to {margin-top: 250%;}
-    }
-}
 @media only screen and (max-width: 1020px){
 
     .matbang_1 img {
-        width: 300%;
-        margin-left: -110%;
+        width: 100%;
 
         
     }
     .matbang_2 img {
-       width: 300%;
-        margin-left: -110%;
+       width: 100%;
     }
 }
+@media only screen and (max-width: 900px){
 
+    .matbang_1 img {
+        width: 200%;
+        margin-left: -70%;
+        margin-top: 70%;
+
+        
+    }
+    .matbang_2 img {
+       width: 200%;
+    }
+}
 .carousel-cell:nth-child(1){
     position: relative;
     background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
@@ -595,4 +572,313 @@ li {
     top: 35%;
     right: 0;
     width: 45px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.6em;
+    line-height: 1.3;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: .5em;
+    text-rendering: optimizeSpeed;
+    color: #fff;
+    font-family: "Noto Serif", sans-serif;
+}
+
+section {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+.section-contact {
+    padding: 30px 0;
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#section-bg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#section-bg .contact-bg.bg-loaded {
+    background-image: url(http://mauweb.monamedia.net/bariacitygate/wp-content/uploads/2018/12/tuyet_tac.jpg);
+}
+
+.section-contact .bg-loaded {
+    opacity: 1;
+}
+
+.section-contact .bg {
+    opacity: 1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+ #section-bg .contact-bg-overlay {
+    background-color: rgba(29, 92, 53, 0.9);
+}
+
+.section-contact .contact-fill {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+}
+
+.section-contact .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.section-contact .contact-bg {
+    width: 100%;
+    overflow: hidden;
+}
+
+#section-bg .section-bg-overlay {
+    background-color: rgba(29, 92, 53, 0.9);
+}
+
+.section-contact .relative {
+    position: relative !important;
+}
+
+.section-contact .section-content {
+    z-index: 1;
+    width: 100%;
+}
+
+.section-contact .row {
+    max-width: 1260px;
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-contact .row .gallery, .row .row:not(.row-collapse), .container .row:not(.row-collapse), .lightbox-content .row:not(.row-collapse) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+.section-contact .align-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.section-contact .col {
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 850px) {
+    .section-contact .large-12 {
+        max-width: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .section-contact .large-8 {
+        max-width: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+        flex-basis: 66.66667%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .section-contact .large-6 {
+        max-width: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .section-contact .large-4 {
+        max-width: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+        flex-basis: 33.33333%;
+    }
+}
+
+.section-contact .cols-inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 0;
+}
+
+.section-contact .light, .light p, .light td {
+    color: #f1f1f1;
+}
+
+.section-contact .col-1 {
+    width: 8.33%;
+}
+
+.section-contact .col-2 {
+    width: 16.66%;
+}
+
+.section-contact .col-3 {
+    width: 25%;
+}
+
+.section-contact .col-4 {
+    width: 33.33%;
+}
+
+.section-contact .col-5 {
+    width: 41.66%;
+}
+
+.section-contact .col-6 {
+    width: 50%;
+}
+
+.section-contact .col-7 {
+    width: 58.33%;
+}
+
+.section-contact .col-8 {
+    width: 66.66%;
+}
+
+.section-contact .col-9 {
+    width: 75%;
+}
+
+.section-contact .col-10 {
+    width: 83.33%;
+}
+
+.section-contact .col-11 {
+    width: 91.66%;
+}
+
+.section-contact .col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 15px 30px;
+}
+
+#section-bg p, #section-bg form {
+    margin-bottom: 1.3em;
+}
+
+#section-bg span {
+    font-size: 90%;
+}
+
+.section-contact .form-contact {
+    position: relative;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.section-contact .light .form-contact {
+    color: #FFF;
+}
+
+.section-contact .text-left {
+    text-align: left;
+}
+
+.section-contact .form-contact {
+    width: 780px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.section-contact .form-contact input {
+    margin-bottom: 0;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 0 .75em;
+    margin: 5px 0;
+    height: 2.507em;
+    font-size: .97em;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+
+.section-contact textarea {
+    margin-bottom: 0;
+}
+
+.section-contact textarea {
+    padding-top: 0.7em;
+    min-height: 120px;
+}
+
+input[type=submit] {
+    background-color: #0f8b64;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    max-width: 6.5em;
+    padding: 0 1.2em;
+    font-size: .97em;
+}
+
+input[type=submit]:hover {
+    background-color: #10512a;
+}
+
+.section-contact .form-contact input {
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0%);
 }
