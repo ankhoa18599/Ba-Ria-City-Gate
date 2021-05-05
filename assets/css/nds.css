@@ -1,0 +1,279 @@
+
+.video-banner{
+
+}
+.full-height{
+    min-height: 550px;
+    height: 100vh;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+.video-fit{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+}
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100vh;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.bg-fill{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+}
+.hidden{
+  display: none;
+}
+.img-popup{
+    position: absolute;
+    padding: 20px;
+    z-index: 1;
+}
+.img-bg{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.nds-bg0{
+    background: url('../media/image/noi-dang-song/bg0.jpg') top center / cover no-repeat;
+}
+.nds-bg1{
+    background: url('../media/image/noi-dang-song/bg1.jpg') top center / cover no-repeat;
+}
+.nds-bg2{
+    background: url('../media/image/noi-dang-song/bg2.jpg') top center / cover no-repeat;
+}
+.nds-bg3{
+    background: url('../media/image/noi-dang-song/bg3.jpg') top center / cover no-repeat;
+}
+.nds-bg4{
+    background: url('../media/image/noi-dang-song/bg4.jpg') top center / cover no-repeat;
+}
+.nds-bg5{
+    background: url('../media/image/noi-dang-song/bg5.jpg') top center / cover no-repeat;
+}
+.nds-bg6{
+    background: url('../media/image/noi-dang-song/bg6.jpg') top center / cover no-repeat;
+}
+
+.nds-bg0>.img-popup{
+    width: 40%;
+    top:10px;
+    left: 130px;
+}
+.nds-bg1>.img-popup{
+    width: 40%;
+    top: 26px;
+    right: 55px;
+    
+}
+.nds-bg2>.img-popup{
+    width: 40%;
+    left: 6%;
+    bottom: 24%;
+}
+.nds-bg3>.img-popup{
+    width: 40%;
+    left: 6%;
+    bottom: 32%;
+}
+.nds-bg4>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.nds-bg5>.img-popup{
+    width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+.nds-bg6>.img-popup{
+   width: 40%;
+    min-width: 400px;
+    left: 5%;
+    top: 10%;
+}
+
+.dtsl-bg1{
+    background: url('../media/image/dau-tu-sinh-loi/bg1.jpg') top center / cover no-repeat;
+}
+.dtsl-bg2{
+    background: url('../media/image/dau-tu-sinh-loi/bg2.jpg') top center / cover no-repeat;
+}
+.dtsl-bg3{
+    background: url('../media/image/dau-tu-sinh-loi/bg3.jpg') top center / cover no-repeat;
+}
+.dtsl-bg4{
+    background: url('../media/image/dau-tu-sinh-loi/bg4.jpg') top center / cover no-repeat;
+}
+
+.dtsl-bg1>.img-popup{
+    position: absolute;
+    top:13%;
+    left:7%;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+.dtsl-bg2>.img-popup{
+    position: absolute;
+    top:8%;
+    left:7%;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+.dtsl-bg3>.img-popup{
+    position: absolute;
+    top:8%;
+    right:12%;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+.dtsl-bg4>.img-popup{
+    position: absolute;
+    top:17%;
+    right:2%;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.none-hidden{
+    display: block;
+    
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width: 549px){
+    .hide-for-small{
+        display: none !important;
+    }
+    .nds-bg0>.img-popup {
+        width: 75%;
+        top: 5%;
+        left: 5%;
+    }
+    .nds-bg1>.img-popup {
+        width: 90%;
+        top: 5%;
+        right: 5%;
+    }
+    .nds-bg2>.img-popup,.nds-bg3>.img-popup {
+        width: 90%;
+        left: 5%;
+        bottom: 38%;
+    }
+    .nds-bg4>.img-popup,.nds-bg5>.img-popup,.nds-bg6>.img-popup {
+    width: 80%;
+    min-width: 100px;
+    left: 5%;
+    top: 10%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+
+    .dtsl-bg1>.img-popup {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+        width: 90%;
+        height: auto;
+}
+    .dtsl-bg2>.img-popup {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 80%;
+        height: auto;
+    }
+    .dtsl-bg3>.img-popup,.dtsl-bg4>.img-popup {
+        position: absolute;
+        top: 3%;
+        left: 0%;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width:550px) and (max-width: 849px)
+{
+    .nds-bg0>.img-popup {
+        width: 55%;
+        top: 3%;
+        left: 1%;
+    }
+    .nds-bg1>.img-popup {
+        width: 60%;
+        top: 5%;
+        right: 5%;
+    }
+    .nds-bg2>.img-popup,.nds-bg3>.img-popup {
+        width: 60%;
+        left: 5%;
+        bottom: 15%;
+    }
+    .nds-bg4>.img-popup,.nds-bg5>.img-popup,.nds-bg6>.img-popup {
+    width: 60%;
+    min-width: 100px;
+    left: 5%;
+    top: 10%;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+    .dtsl-bg1>.img-popup {
+        
+        top: 2%;
+        left: 3%;
+        width: 60%;
+    }
+    .dtsl-bg2>.img-popup {
+        
+        top: -3%;
+        left: 0%;
+        width: 55%;
+    }
+    .dtsl-bg3>.img-popup{
+    
+        top: 8%;
+        right: 12%;
+        width: 60%;
+    }
+    .dtsl-bg4>.img-popup {
+        
+        top: 15%;
+        right: 5%;
+        width: 60%;
+    }
+}
