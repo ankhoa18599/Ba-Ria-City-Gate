@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/52510a8d75.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/chitiet.css">
+    <link rel="stylesheet" href="./assets/css/flickity.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header_content">
+        <a href="index.html"> <img width="100%" height="100%" src="assets/img/logo.png" alt=""></a>
+        <div class="header_list">
+            <div class="phone" style="display: flex; width: 250%;">
+            <i style="margin-right: -50%; font-size: 20px; cursor: pointer;" class="fas fa-phone-alt"></i>
+            <p style="cursor: pointer;">076 922 0162</p>
+        </div>
+            <i id="header_click" style="font-size: 24px; cursor: pointer;" class="fas fa-bars"></i>
+        </div>
+        <div id="header_nen" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(71, 109, 94, 0.7); z-index: 10; display: none;"></div>
+        <div id="header_list_ul" class="header_list_ul">
+            <nav>
+                <ul>
+                    <p id="header_close" style="margin-left: 90%; font-size: 28px; color: gray; cursor: pointer; font-weight: bolder;">x</p>
+                    <li id="header_gioithieu"><a href="#gioithieu">GIỚI THIỆU</a></li>
+                    <li><a href="#vitri"> VỊ TRÍ</a></li>
+                    <li><a href="#matbang">MẶT BẰNG</a></li>
+                    <li><a href="#tienich">TIỆN ÍCH</a></li>
+                    <li><a href="#giatri">GIÁ TRỊ ĐẦU TƯ</a></li>
+                    <li><a href="#section-bg">LIÊN HỆ</a></li>
+                    <li style="display: flex; text-align: center; width: 40%; color: gray; border: 0;"><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("header_click").onclick = function(){
+            document.getElementById("header_list_ul").style.display = "block";
+            document.getElementById("header_nen").style.display = "block";
+            document.body.style.overflow = 'hidden';
+        }
+        document.getElementById("header_close").onclick = function(){
+            document.getElementById("header_list_ul").style.display = "none";
+            document.getElementById("header_nen").style.display = "none";
+            document.body.style.overflow = 'scroll';
+        }
+        document.getElementById("header_nen").onclick = function(){
+            document.getElementById("header_list_ul").style.display = "none";
+            document.getElementById("header_nen").style.display = "none";
+            document.body.style.overflow = 'scroll';
+        }
+    </script>
+    <div class="tongthe">
+        <h1>MẶT BẰNG TỔNG THỂ</h1>
+    </div>
+    <div class="chitiet">
+
+    </div>
+    <section class="section-contact" id="section-bg">
+        <div class="bg contact-bg fill contact-fill bg-loaded">
+            <div class="contact-bg-overlay absolute fill"></div>
+        </div>
+    
+        <div class="section-content relative">
+            <div class="gap-element" style="display:block; height:auto; padding-top:50px"></div>
+            <div class="row align-center" id="contact-row">
+                <div class="col-8">
+                    <div class="cols-inner">
+                        <div class="row" id="row-1">
+                            <div class="col large-12">
+                                <div class="cols-inner">
+                                    <h2>HỆ THỐNG SÀN GIAO DỊCH PROPERTYX </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="row-2">
+                            <div class="col large-6">
+                                <div class="cols-inner light" style="padding:0px 40px 0px 10px;">
+                                    <p><span><strong>PropertyX Chi nhánh Phạm Viết
+                                                Chánh</strong></span><br><span>1A Phạm Viết Chánh,
+                                            P.Nguyễn Cư Trinh, Q.1, TP.HCM</span><br>
+                                        <span>Điện thoại:
+                                            (028) 7300 9058 – 0906 992 996</span>
+                                    </p>
+                                    <p><span><strong>PropertyX Chi nhánh Nguyễn Chí
+                                                Thanh</strong></span><br><span>526 Nguyễn Chí Thanh,
+                                            P.7, Q.10, TP.HCM</span><br><span>Điện thoại: (028) 7300
+                                            7499 – 0909 306 810</span></p>
+                                    <p><span><strong>PropertyX Chi nhánh Hàng
+                                                Xanh</strong></span><br><span>527 Điện Biên Phủ, P. 25,
+                                            Q.Bình Thạnh, TP.HCM</span><br>
+                                        <span>Điện thoại: (028) 7300
+                                            7077 – 0908 026 046</span>
+                                    </p>
+                                    <p><span><strong>PropertyX Chi nhánh Vũng
+                                                Tàu</strong></span><br><span>Tầng M, chung cư Vung Tau
+                                            Melody</span><br><span>Góc đường Võ Thị Sáu – Hoàng Hoa
+                                            Thám, P. Thắng Tam, TP. Vũng Tàu&nbsp;</span><br><span>Điện
+                                            thoại: (0254) 7305 019 – 0937 702 768</span></p>
+                                </div>
+                            </div>
+                            <div class="col large-6">
+                                <div class="cols-inner light" style="padding:0px 40px 0px 10px;">
+                                    <p><span><strong>PropertyX Chi nhánh Phạm Viết
+                                                Chánh</strong></span><br><span>1A Phạm Viết Chánh,
+                                            P.Nguyễn Cư Trinh, Q.1, TP.HCM</span><br><span>Điện thoại:
+                                            (028) 7300 9058 – 0906 992 996</span></p>
+                                    <p><span><strong>PropertyX Chi nhánh Nguyễn Chí
+                                                Thanh</strong></span><br><span>526 Nguyễn Chí Thanh,
+                                            P.7, Q.10, TP.HCM</span><br><span>Điện thoại: (028) 7300
+                                            7499 – 0909 306 810</span></p>
+                                    <p><span><strong>PropertyX Chi nhánh Hàng
+                                                Xanh</strong></span><br><span>527 Điện Biên Phủ, P. 25,
+                                            Q.Bình Thạnh, TP.HCM</span><br><span>Điện thoại: (028) 7300
+                                            7077 – 0908 026 046</span></p>
+                                    <p><span><strong>PropertyX Chi nhánh Vũng
+                                                Tàu</strong></span><br><span>Tầng M, chung cư Vung Tau
+                                            Melody</span><br><span>Góc đường Võ Thị Sáu – Hoàng Hoa
+                                            Thám, P. Thắng Tam, TP. Vũng Tàu&nbsp;</span><br><span>Điện
+                                            thoại: (0254) 7305 019 – 0937 702 768</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="cols-inner text-left light">
+                        <h2>ĐĂNG KÝ NHẬN THÔNG TIN</h2>
+                        <p><span>Xin chân thành cám ơn Quý khách đã quan
+                                tâm đến dự án <strong>BA RIA CITY GATE</strong>. Để biết thêm thông tin chi tiết, Quý khách
+                                vui
+                                lòng liên hệ trực tiếp với chúng tôi, hoặc để lại thông tin theo mẫu bên dưới. Chúng tôi sẽ
+                                hồi
+                                âm trong thời gian sớm nhất.</span></p>
+    
+                        <div class="form-contact">
+                            <form action="" id="form1">
+                                <input type="text" id="full-name" name="full-name" placeholder="Họ và tên">
+                                <input type="text" id="email" name="email" placeholder="Email">
+                                <input type="text" id="sdt" name="SDT" placeholder="Số điện thoại">
+                                <textarea id="subject" name="textarea" rows="18" cols="40"
+                                    placeholder="Nội dung liên hệ"></textarea>
+                                <input type="submit" value="ĐĂNG KÍ" id="btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

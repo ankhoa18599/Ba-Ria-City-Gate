@@ -51,16 +51,19 @@
         document.getElementById("header_click").onclick = function(){
             document.getElementById("header_list_ul").style.display = "block";
             document.getElementById("header_nen").style.display = "block";
+            document.getElementById("mess").style.display = "none";
             document.body.style.overflow = 'hidden';
         }
         document.getElementById("header_close").onclick = function(){
             document.getElementById("header_list_ul").style.display = "none";
             document.getElementById("header_nen").style.display = "none";
+            document.getElementById("mess").style.display = "block";
             document.body.style.overflow = 'scroll';
         }
         document.getElementById("header_nen").onclick = function(){
             document.getElementById("header_list_ul").style.display = "none";
             document.getElementById("header_nen").style.display = "none";
+            document.getElementById("mess").style.display = "block";
             document.body.style.overflow = 'scroll';
         }
     </script>
@@ -167,12 +170,20 @@
             <div id="matbang_1" class="carousel-cell bg-fill matbang_1">
                 <div class="img-popup animate__animated animate__fadeInLeft">
                     <img class="matbang_1_img"  src="./assets/img/ttda.png" alt="">
-                </div>       
+                    <a class="matbang_icon" href="chitiet.html">
+                        <i class="fas fa-search"></i>
+                    </a> 
+                </div>   
+                   
             </div>
             <div id="matbang_2" class="carousel-cell bg-fill matbang_2">
                 <div class="img-popup animate__animated animate__fadeInRight">
                     <img class="matbang_2_img" src="./assets/img/ttda.png" alt="">
+                    <a class="matbang_icon" href="chitiet.html">
+                        <i class="fas fa-search"></i>
+                    </a> 
                 </div>
+                
             </div>
         </div>
           
@@ -256,7 +267,7 @@
     }
     </script>
 
-    <div class="mess">
+    <div class="mess" id="mess">
         <img src="assets/img/fb-messenger.png" alt="">
     </div>
    
