@@ -565,28 +565,3 @@ li {
     from {right: 0; opacity: 0;}
     to {right: 8%; opacity: 1;}
 }
-
-.scrolltotop {
-    position: fixed;
-    display: flex;
-    width: 45px;
-    height: 45px;
-    bottom: 0;
-    right: 0;
-    margin: 1rem;
-    z-index: 1000;
-    border: 2px solid white;
-    border-radius: 4rem;
-    transition: 1s;
-    opacity: 0;
-}
-
-.btn_scrolltotop i {
-    padding: 13px;
-    color: white;
-}
-
-.scrolltotop.show {
-    transition: 1s;
-    opacity: 1;
-}
