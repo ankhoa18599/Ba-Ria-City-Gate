@@ -628,6 +628,35 @@ li {
     width: 45px;
     z-index: 2;
 }
+.dautu{
+    width: 100%;
+    background-image: url(/assets/img/Green-Wallpaper-1.jpg);
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+.dautu .dautu_left{
+    width: 25%;
+    padding: 5% 0;
+    margin-left: 15%;
+    animation-name: dautu_left;
+    animation-duration: 2s;
+}
+.dautu .dautu_righ{
+    width: 25%;
+    padding: 5% 0;
+    margin-right: 15%;
+    animation-name: dautu_righ;
+    animation-duration: 2s;
+}
+@-webkit-keyframes dautu_left{
+    100% { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes dautu_righ{
+    100% { -webkit-transform: rotate(360deg); }
+}
+
 
 
 * {
