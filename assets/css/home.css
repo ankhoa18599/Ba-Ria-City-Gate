@@ -535,7 +535,7 @@ li {
     min-height: 750px;
     height: 100%;
     color: white;
-    background-image: url(../media/image/khu-do-thi-kieu-mau/banner1.jpg);
+    background-image: url('../media/image/khu-do-thi-kieu-mau/banner1.jpg');
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -1018,7 +1018,7 @@ input[type=submit]:hover {
 }
 
 .bg-img {
-    background-image: url(../media/image/tuyet_tac1.jpg);
+    background-image: url('../media/image/tuyet_tac1.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     min-height: 750px;
