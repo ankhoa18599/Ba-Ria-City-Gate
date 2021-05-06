@@ -182,13 +182,13 @@ li {
 }
 .matbang_1{
     width: 100%;
-    background-image: url(/assets/img/tt_duan1.jpg) !important;
+    background-image: url('../img/tt_duan1.jpg') !important;
     background-position: center;
     position: relative;
 }
 .matbang_2{
     width: 100%;
-    background-image: url(/assets/img/tt_duan.jpg) !important;
+    background-image: url('../img/tt_duan.jpg') !important;
     background-position: center;
 }
 .matbang_1 img {
