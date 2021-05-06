@@ -1006,3 +1006,62 @@ input[type=submit]:hover {
         height: 20%;
     }
 }
+
+/* CSS for Gia tri vuot troi */
+
+.section-gt-vuot-troi {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 750px;
+    height: 100%;
+}
+
+.bg-img {
+    background-image: url(../media/image/tuyet_tac1.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(29, 92, 53, 0.9);
+    min-height: 750px;
+    height: 100%;
+}
+
+.gt-content {
+    position: absolute;
+}
+.img_box {
+    position: absolute;
+    width: 65%;
+    height: 75%;
+    padding-top: 7%;
+}
+
+.img_content {
+    width: 20%;
+    height: 35%;
+    opacity: 0;
+}
+
+.img_content.gt-trans {
+    opacity: 1;
+    animation: fadeIn 1.5s 1 ease;
+}
+
+.gt_content_top {
+    padding-top: 12%;
+}
+
+.gt_content_top {
+    padding-top: 14%;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

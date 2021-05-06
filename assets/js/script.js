@@ -10,6 +10,10 @@ $(document).ready(function() {
             $('.scrolltotop').removeClass('show');
         }
 
+        if($(window).scrollTop() > 4200) {
+            $('.img_content').addClass('gt-trans');
+        }
+
         // Transition for Khu do thi kieu mau
         if($(window).scrollTop() > 300) {
             $('.text_img').addClass('trans_text');
