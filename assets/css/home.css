@@ -104,7 +104,7 @@ li {
     }
 }
 .video-banner{
-
+    width: 100%;
 }
 .full-height{
     min-height: 550px;
