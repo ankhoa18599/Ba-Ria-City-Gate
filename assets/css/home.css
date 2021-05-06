@@ -352,7 +352,7 @@ li {
     width: 100%;
     height: 100%;
     padding: 2% 0; 
-    background-image: url('/assets/img/vitri.gif');
+    background-image: url('../img/vitri.gif');
   
 }
 .location .location_content{
@@ -630,7 +630,7 @@ li {
 }
 .dautu{
     width: 100%;
-    background-image: url(/assets/img/Green-Wallpaper-1.jpg);
+    background-image: url('../img/Green-Wallpaper-1.jpg');
     display: flex;
     margin: 0 auto;
     text-align: center;
