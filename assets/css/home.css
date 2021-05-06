@@ -1065,3 +1065,19 @@ input[type=submit]:hover {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+@media only screen and (max-width: 768px) {
+    .gt-content {
+        padding-top: 20%;
+        max-width: 100%;
+        left: 7%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .gt-content {
+        padding-top: 20%;
+        max-width: 100%;
+        left: 3%;
+    }
+}
