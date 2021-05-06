@@ -1023,6 +1023,7 @@ input[type=submit]:hover {
     background-repeat: no-repeat;
     min-height: 750px;
     height: 100%;
+    width: 100%;
 }
 
 .overlay {
@@ -1030,6 +1031,7 @@ input[type=submit]:hover {
     background-color: rgba(29, 92, 53, 0.9);
     min-height: 750px;
     height: 100%;
+    width: 100%;
 }
 
 .gt-content {
