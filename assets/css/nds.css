@@ -232,22 +232,22 @@
     .nds-bg0>.img-popup {
         width: 55%;
         top: 3%;
-        left: 1%;
+        left: 0%;
     }
     .nds-bg1>.img-popup {
         width: 60%;
         top: 5%;
-        right: 5%;
+        right: 10%;
     }
     .nds-bg2>.img-popup,.nds-bg3>.img-popup {
         width: 60%;
-        left: 5%;
+        left: 0%;
         bottom: 15%;
     }
     .nds-bg4>.img-popup,.nds-bg5>.img-popup,.nds-bg6>.img-popup {
     width: 60%;
     min-width: 100px;
-    left: 5%;
+    left: 0%;
     top: 10%;
     }
     .swiper-button-next, .swiper-button-prev{
@@ -256,7 +256,7 @@
     .dtsl-bg1>.img-popup {
         
         top: 2%;
-        left: 3%;
+        left: 0%;
         width: 60%;
     }
     .dtsl-bg2>.img-popup {
@@ -268,13 +268,13 @@
     .dtsl-bg3>.img-popup{
     
         top: 8%;
-        right: 12%;
+        right: 30%;
         width: 60%;
     }
     .dtsl-bg4>.img-popup {
         
         top: 15%;
-        right: 5%;
+        right: 30%;
         width: 60%;
     }
 }
