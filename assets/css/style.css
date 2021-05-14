@@ -95,7 +95,7 @@ img {
     display: block;
   }
   .industry .industry-header .viewAll {
-    top: 50px !important;
+    top: 110px !important;
     right: 43% !important;
   }
   .industry .row {
@@ -107,6 +107,9 @@ img {
   .industry-banner {
     display: block !important;
     height: 70% !important;
+  }
+  .industry .col-md-12 {
+    padding: 0 !important;
   }
 }
 
@@ -577,8 +580,8 @@ img {
   display: none;
   position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%, 5%);
-          transform: translate(-50%, 5%);
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
   height: 85%;
   width: 100%;
   border-radius: 10px;
