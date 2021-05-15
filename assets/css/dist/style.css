@@ -1158,37 +1158,38 @@ img {
   width: 33.33%;
   padding: 0 15px;
 }
-.main-services .container .content-service .service-block {
+
+.service-block {
   height: 100%;
   border: 1px solid #007eff;
   border-radius: 10px;
   box-shadow: 0 0 15px 0 rgba(119, 119, 119, 0.3);
   background: #fff;
 }
-.main-services .container .content-service .service-block:hover {
+.service-block:hover {
   cursor: pointer;
 }
-.main-services .container .content-service .service-block .img-icon {
+.service-block .img-icon {
   margin-top: -25px;
 }
-.main-services .container .content-service .service-block .img-icon img {
+.service-block .img-icon img {
   max-width: 100%;
   object-fit: cover;
 }
-.main-services .container .content-service .service-block .content {
+.service-block .content {
   color: #333;
   padding: 35px 20px;
 }
-.main-services .container .content-service .service-block .content h3 {
+.service-block .content h3 {
   margin: 0 0 20px;
   font-family: "Noto Serif", serif;
   font-weight: 600;
   font-size: 22px;
 }
-.main-services .container .content-service .service-block .content h3:hover {
+.service-block .content h3:hover {
   color: #007eff;
 }
-.main-services .container .content-service .service-block .content p {
+.service-block .content p {
   line-height: 20px;
   margin: 0;
 }
@@ -1266,4 +1267,43 @@ img {
   width: 100%;
   padding: 0px 15px;
   height: 100%;
+}
+
+.item-article-slide {
+  height: 100%;
+  border: 1px solid #007eff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(119, 119, 119, 0.3);
+  background: #fff;
+}
+.item-article-slide .img {
+  background-size: cover;
+  width: 100%;
+}
+.item-article-slide .content {
+  text-align: center;
+}
+.item-article-slide .content .sub-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.item-article-slide .content .sub-title a {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+}
+.item-article-slide .content .sub-title p {
+  text-align: center;
+  font-size: 14px;
+}
+.item-article-slide .content .right-bottom span {
+  float: left;
+  padding: 10px;
+}
+.item-article-slide .content .right-bottom a {
+  float: right;
+  padding: 10px;
 }
