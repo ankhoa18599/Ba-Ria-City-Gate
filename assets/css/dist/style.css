@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: #fff;
   font-size: 14px;
@@ -115,6 +119,70 @@ img {
   .industry .col-md-12 {
     padding: 0 !important;
   }
+
+  .container .content-service .cl-md-4 {
+    width: 100% !important;
+  }
+
+  .container .content-service .cl-md-4:not(:last-of-type) {
+    margin-bottom: 50px;
+  }
+
+  .industry .section-industry {
+    padding: 30px 20px !important;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .home-banner {
+    top: 0 !important;
+  }
+
+  .navbar {
+    top: 1px !important;
+  }
+
+  .col-xs-12 {
+    width: 100%;
+  }
+
+  .col-sm-4 {
+    width: 100%;
+  }
+
+  .support {
+    height: 550px !important;
+  }
+  .support .img-support-people, .support .list-support {
+    display: none;
+  }
+  .support .title-support h2 {
+    font-size: 20px !important;
+  }
+  .support .title-support p {
+    font-size: 14px !important;
+  }
+  .support .support-banner {
+    position: absolute !important;
+    display: block !important;
+    top: 50% !important;
+    height: 40% !important;
+    width: 80% !important;
+  }
+  .support .support-banner a {
+    font-size: 14px !important;
+  }
+  .support .support-banner .swiper-slide {
+    padding: 15px 0px !important;
+    background: transparent !important;
+    background: 0 0;
+    width: 100%;
+  }
+  .container-full-width {
+    width: 90% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-2 {
@@ -134,10 +202,15 @@ img {
     display: none !important;
   }
 
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
   .home-counter .content {
     height: 200px !important;
   }
-  .home-counter .col-sm-6 {
+
+  .col-sm-6 {
     float: left;
     display: block;
   }
@@ -157,6 +230,22 @@ img {
 
   .set-up-now {
     display: none !important;
+  }
+
+  .col-xs-12 {
+    width: 100% !important;
+  }
+
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  .support .col-sm-4 {
+    display: inline-block !important;
+    width: 32.333333%;
+  }
+  .support .img-support-people {
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -218,6 +307,18 @@ img {
   .set-up-now {
     display: none !important;
   }
+
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  .support {
+    height: 550px !important;
+  }
+
+  .col-xs-12 {
+    width: 100% !important;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -266,6 +367,11 @@ img {
   .col-md-4 {
     float: left;
     width: 33.33333333%;
+  }
+
+  .col-lg-7 {
+    float: left;
+    width: 58.33333333%;
   }
 }
 .header {
@@ -595,7 +701,7 @@ img {
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: 1;
-  min-width: 500px;
+  min-width: 80%;
 }
 .home-banner .content .content-bannercf {
   color: #fff;
@@ -895,6 +1001,10 @@ img {
   display: inline-block !important;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .active-item {
   color: #333 !important;
 }
@@ -1015,4 +1125,145 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.main-services {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+}
+.main-services .container .content-service {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+.main-services .container .content-service h2 {
+  font-size: 36px;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+}
+.main-services .container .content-service p {
+  max-width: 800px;
+  margin: 0 auto 65px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.main-services .container .content-service .row-service {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-services .container .content-service .cl-md-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+.main-services .container .content-service .service-block {
+  height: 100%;
+  border: 1px solid #007eff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(119, 119, 119, 0.3);
+  background: #fff;
+}
+.main-services .container .content-service .service-block:hover {
+  cursor: pointer;
+}
+.main-services .container .content-service .service-block .img-icon {
+  margin-top: -25px;
+}
+.main-services .container .content-service .service-block .img-icon img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.main-services .container .content-service .service-block .content {
+  color: #333;
+  padding: 35px 20px;
+}
+.main-services .container .content-service .service-block .content h3 {
+  margin: 0 0 20px;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.main-services .container .content-service .service-block .content h3:hover {
+  color: #007eff;
+}
+.main-services .container .content-service .service-block .content p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.support {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  height: 470px;
+  min-width: 300px;
+  background: url("../media/img/etc/bg-worldwide.png") top center/cover no-repeat;
+}
+.support .img-support-people img {
+  max-width: 100%;
+  position: absolute;
+  bottom: -30px;
+}
+.support .content-support {
+  background: #fff url("../media/img/etc/img-right-worldwide.png") top center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 30px;
+  height: 100%;
+}
+.support .content-support .title-support h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+}
+.support .content-support .title-support p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.support .content-support .content {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.support .content-support .content a {
+  font-size: 18px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+.support .content-support .content a:hover {
+  text-decoration: none;
+  color: #007eff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.support .support-banner {
+  display: none;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.support .support-banner .support-swiper-container {
+  height: 100%;
+}
+.support .support-banner .swiper-slide {
+  flex-direction: column;
+}
+
+.container-full-width {
+  width: 100%;
+  padding: 0px 15px;
+  height: 100%;
 }
